@@ -10,6 +10,6 @@ def oxford_comma(array)
     array.push(temp)
     array = array.join(', ')
   elsif array.size > 3
-    array.join
+    array
   end
 end
