@@ -10,6 +10,8 @@ def oxford_comma(array)
     array.push(temp)
     array = array.join(', ')
   elsif array.size > 3
-    array
+    temp = "and #{array.last}"
+    array.pop()
+    array.push(temp)
   end
 end
